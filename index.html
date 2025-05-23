@@ -5,19 +5,19 @@
         body { /* Controls what is visible on the page- body: consists of the content of the page- this is the background code */
             background-image: url("BackgroundPink.png");
             background-size: cover; /* Ensures the background will cover the whole page rather than leaving out gaps- fills everything */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            display: flex; /* this is the parent container, which is the 'box' that all the code is in. Because the body is the flex container, the container becomes a child element, controlled by the code in the parent. */
+            justify-content: center; /* This centers the container by controlling the horizontal position (left right). */
+            align-items: center; /* This centers the container by controlling the vertical position (up down) */
+            min-height: 100vh; /* This ensures that the body will always be at least as tall as the viewport height (vh) (measures the full height of the visible browser screen). The 100vh tells the code that the bust must minimally be 100% of this measured amount, meaning that no matter which screen it is shown on, the entire screen will be covered. */
         }
 
         /*Controls the text and image of white box- this is my inner box. */
         .container { 
-            background-color: rgb(255, 255, 255); !important! /*Red, Green, Blue, Alpha. End percentage is amount of Opacity. 255 each is white */ 
+            background-color: rgb(255, 255, 255) !important!; /*Red, Green, Blue, Alpha. End percentage is amount of Opacity. 255 each is white */ 
             opacity: 1; /* Ensures full opaqueness of the box */
-            padding: 20px;
-            width: 60%;
-            border-radius: 10px;
+            padding: 20px; /* basically the margins between the text, or content, and the borders of the box */
+            width: 80%; /* Sets the width of the container to a certain percentage of the parent body size */
+            border-radius: 1px; /*rounds the corners of the .container box by an amount of pixels- controlls smoothness? */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
     </style>
