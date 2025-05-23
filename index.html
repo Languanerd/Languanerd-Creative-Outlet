@@ -7,6 +7,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,7 +16,8 @@
 
         /*Controls the text and image of white box- this is my inner box. */
         .container { 
-            background-color: rgb(255, 255, 255); /*Red, Green, Blue, Alpha. End percentage is amount of Opacity. 255 each is white */ 
+            background-color: rgb(255, 255, 255); !important! /*Red, Green, Blue, Alpha. End percentage is amount of Opacity. 255 each is white */ 
+            opacity: 1; /* Ensures full opaqueness of the box */
             padding: 20px;
             width: 60%;
             text-align: center;
