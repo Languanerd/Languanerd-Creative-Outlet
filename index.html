@@ -41,12 +41,13 @@
             transform: translateY(-50%); /* Ensures perfect centering- delete? */
             padding: 10px 20px;
             font-size: 18px;
-            background color: #444;
+            background-color: #444;
             color: black;
             border: none;
             border-radius: 8px;
             cursor: pointer;
             margin-right: 50px;
+            display: inline-block; /* Ensures that the button behaves as it should despite browser defaults */
         }
         
     </style>
@@ -62,7 +63,7 @@
     </div>
     
 <a href="next-page.html">
-    <button class="next-page" onclick="transitionPage()">Next Page</button>
+    <button class="next-page" >Next Page</button>
 </a>
     
 </body>
