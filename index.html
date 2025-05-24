@@ -4,7 +4,7 @@
     <style> /* Style that starts centering the text in the middle in a white rectangle and the background behind that which is inputted there */
         body { /* Controls what is visible on the page- body: consists of the content of the page- this is the background code */
             background-image: url("BackgroundPink.png");
-            background-size: 100vw 100vw; /* Ensures the background will cover the whole page rather than leaving out gaps- fills everything */
+            background-size: 100vw 100vh; /* Ensures the background will cover the whole page rather than leaving out gaps- fills everything */
             display: flex; /* this is the parent container, which is the 'box' that all the code is in. Because the body is the flex container, the container becomes a child element, controlled by the code in the parent. */
             justify-content: center; /* This centers the container by controlling the horizontal position (left right). */
             align-items: center; /* This centers the container by controlling the vertical position (up down) */
@@ -40,7 +40,7 @@
         .nextpage {
             position: absolute; /* Positions the button relative to the neares positioned ancestor (closest parent that has a position value of relative, absolute, or fixed. This one has  */
             top: 50%; /* Centers it vertically to the exact middle */
-            left: 80vw; /*Moves the button outside the container- the calc is used when merging multiple units- allows for addition, m,d, and s.This means the left will be 100% of the container plus 20px*/
+            left: calc(90vw); /*Moves the button outside the container- the calc is used when merging multiple units- allows for addition, m,d, and s.This means the left will be 100% of the container plus 20px*/
             transform: translateY(-50%); /* Ensures perfect centering- delete? */
             padding: 10px 20px;
             font-size: 18px;
