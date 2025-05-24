@@ -22,13 +22,12 @@
             background-color: rgb(255, 255, 255, 1) !important; /*Red, Green, Blue, Alpha. End percentage is amount of Opacity. 255 each is white */ 
             opacity: 1; /* Ensures full opaqueness of the box */
              /*The margins between the text, or content, and the borders of the box */
-            padding-top: 10px !important;
-            padding-bottom: 80px !important;
-            padding-right: 30px !important;
-            padding-left: 30px !important;
+            padding: 10px 30px 80px 30px !important; /* Set in order top, bottom, right, left */
             width: 20%; /* Sets the width of the container to a certain percentage of the parent body size */
+            box-sizing: border-box; /*prevents the padding from adding more width outside of the instructed 20% */
             border-radius: 15px; /*rounds the corners of the .container box by an amount of pixels- controlls smoothness? */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            flex: 0 1 20%; /* 0- ensures the container will not grow beyond 20% (defined width). 1 (default shrink factor- element will reduce at a normal rate in relation to other shrinking objects)- allows the container to shrink along with parent, should it shrink. 20%- starts the width of the container at exactly 20% of the parent's width. */
         }
 
         .next-page {
