@@ -35,9 +35,9 @@
             
 
         .nextpage {
-            position: fixed;
+            position: absolute; /* Positions the button relative to the neares positioned ancestor (closest parent that has a position value of relative, absolute, or fixed. This one has  */
             top: 50%; /* Centers it vertically to the exact middle */
-            right: 10px; /* Pushes it to the right side */
+            left: calc(100% + 40px); /*Moves the button outside the container- the calc is used when merging multiple units- allows for addition, m,d, and s.This means the left will be 100% of the container plus 20px*/
             transform: translateY(-50%); /* Ensures perfect centering- delete? */
             padding: 10px 20px;
             font-size: 18px;
@@ -46,7 +46,6 @@
             border: none;
             border-radius: 8px;
             cursor: pointer;
-            margin-right: 50px;
             display: inline-block; /* Ensures that the button behaves as it should despite browser defaults */
         }
         
