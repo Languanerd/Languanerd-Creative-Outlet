@@ -12,6 +12,7 @@
             min-height: 100vh; /* This ensures that the body will always be at least as tall as the viewport height (vh) (measures the full height of the visible browser screen). The 100vh tells the code that the bust must minimally be 100% of this measured amount, meaning that no matter which screen it is shown on, the entire screen will be covered. */            
             background-repeat: no-repeat;
             background-position: center center;
+            overflow-x: hidden; /*prevents horizontal scrollbar */
         }
         
         .special-font { /*This will only apply to the 'classed' paragraphs or texts. */
@@ -39,7 +40,7 @@
         .nextpage {
             position: absolute; /* Positions the button relative to the neares positioned ancestor (closest parent that has a position value of relative, absolute, or fixed. This one has  */
             top: 50%; /* Centers it vertically to the exact middle */
-            left: calc(80vw + 20px); /*Moves the button outside the container- the calc is used when merging multiple units- allows for addition, m,d, and s.This means the left will be 100% of the container plus 20px*/
+            left: 80vw; /*Moves the button outside the container- the calc is used when merging multiple units- allows for addition, m,d, and s.This means the left will be 100% of the container plus 20px*/
             transform: translateY(-50%); /* Ensures perfect centering- delete? */
             padding: 10px 20px;
             font-size: 18px;
